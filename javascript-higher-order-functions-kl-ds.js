@@ -5,11 +5,29 @@
 var arr1 = [3, 9, 15, 4, 10]
 // --> [30, 90, 150, 40, 100]
 
+// Psuedo Coding
+// Write a function called multiplier
+//take in an array of numbers
+// iterate over numbers .forEach()
+// multiply each number by 10
+// return an array 
+
+const multiplier = (array) => {
+    return array.map(value => {
+        return value * 10
+    })
+}
+console.log(multiplier(arr1))
+
 
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
 // var arr2 = [2, 7, 3, 5, 8, 10, 13]
 // // --> [7, 3, 5, 13]
+
+
+
+
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters.HINT: Use typeof method
 // var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // --> "nicework"
