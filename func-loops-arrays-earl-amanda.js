@@ -11,19 +11,34 @@
 // // --> [9, 27, 45, 12, 30]
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
- var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
- const oddArray = (array) =>{
-    let newArray = []
- for(let i = 0; i < testArr2.length; i++){
-     if(testArr2[i] % 2 == 1){
-         newArray.push(testArr2[i])
-     }
-    }
-}
-console.log(oddArray(testArr2))
+//  var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+//
+// const onlyOdd = (array) => {
+//   let newArr = []
+//   for(let i=0; i<array.length; i++){
+//     if(array[i] % 2 !== 0){
+//       newArr.push(array[i])
+//     }
+//   }
+//   return newArr
+// }
+//
+// console.log(onlyOdd(testArr2))
+
 // // --> [-7, 3, 5, 13]
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+ var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+
+ const letterOnly = ( array ) => {
+   let letterArray = []
+   for (var i = 0; i < array.length; i++) {
+     if ( typeof array[i] === "string") {
+       letterArray.push(array[i])
+     }
+   }
+   return letterArray
+ }
+ console.log(letterOnly(comboArr));
 // // --> "nicework"
 // Create a function that takes in an array of numbers and returns the sum.
 // var addThese1 = [1, 2, 3, 4]
