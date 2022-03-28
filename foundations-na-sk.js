@@ -31,8 +31,6 @@
 //log the number in the newArray for the odd numbers
 
 
-
-
 // const oddNums = (array) => {
 //     let newArray = [];
 //     for(let i=0; i<array.length; i++)
@@ -47,24 +45,22 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
+//Write a function that takes in an array of numbers and letters and returns a string with only the letters.
+//HINT: use the typeof method.
 // var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
 // // --> "nicework"
 //
+
+//Create a function
+//typeofmethod
+// array of numbers, letters
+//returns string with only letters
+
+var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+
+
+
+
 // //Create a function that takes in an array of numbers and returns the sum.
 // var addThese1 = [1, 2, 3, 4]
 // // --> 10
