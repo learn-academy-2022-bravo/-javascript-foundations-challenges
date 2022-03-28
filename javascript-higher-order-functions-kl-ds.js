@@ -42,8 +42,25 @@ const oddFinder = (array) => {
 console.log(oddFinder(arr2))
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters.HINT: Use typeof method
-// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // --> "nicework"
+
+// Psuedo Coding
+// Write a function called letterFinder
+// Take in an array of mixed data types that include numbers, letter and boolean values
+// Itertion must occur over each 
+// filter using.typeOf() to extract the letters
+// use .join()
+
+const letterFinder =(array,dataType)=> {
+     return array.filter(value =>{
+         return typeof value === dataType
+     })
+}
+
+console.log(letterFinder(comboArr, "string").join(""))
+
+
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
 // var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 // // --> [58, "abcd", true]
