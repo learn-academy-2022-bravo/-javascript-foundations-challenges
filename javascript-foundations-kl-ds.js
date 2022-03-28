@@ -22,7 +22,7 @@ const multiplier =(array) => {
 }
 console.log(multiplier(testArr1))
 
-
+//
 // // --> [9, 27, 45, 12, 30]
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
 // var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
