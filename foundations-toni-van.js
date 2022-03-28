@@ -21,16 +21,16 @@
 
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
-var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
-// --> [-7, 3, 5, 13]
-
-const newArray =[]
-testArr2.forEach(array => {
-  if (array % 2 !== 0){
-    newArray.push(array)
-  }
-});
-console.log(newArray);
+// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// // --> [-7, 3, 5, 13]
+//
+// const newArray =[]
+// testArr2.forEach(array => {
+//   if (array % 2 !== 0){
+//     newArray.push(array)
+//   }
+// });
+// console.log(newArray);
 
 //   let newArray = []
 //   for (let i = 0; i < array.length; i++) {
