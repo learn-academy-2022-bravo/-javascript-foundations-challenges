@@ -45,12 +45,46 @@ var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
 // var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
-// // --> "nicework"
+// // // --> "nicework"
+// //create a function taking an array and only outputting letters called bravo
+// // create numStorage3
+// //create a loop to identify only letters
+// //utilize if statement with typeOf 
+// //push to variable numStorage3
+// //retun numStorage3
+// //create a console.log result
+// const bravo = (words) => {
+//     let numStorage3 = []
+//     for(let i =0; i<words.length; i++){
+//         if(typeof(words[i]) === "string"){
+//             numStorage3.push(words[i])
+//         }
+//     }
+//     return numStorage3.join("")
+// }
+// console.log(bravo(comboArr))
+
 // Create a function that takes in an array of numbers and returns the sum.
-// var addThese1 = [1, 2, 3, 4]
+var addThese1 = [1, 2, 3, 4]
 // // --> 10
 //
-// var addThese2 = []
+//create a function that takes in an array of numbers and returns the sum called numSum
+//create a variable numSumTotal 
+//create a loop to address each number and adds it to numSumTotal
+//return numSumTotal
+//console.log numSumTotal
+
+const numSum = (array4) => {
+    let numSumTotal = [0]
+    for(let i = 0; i < array4.length; i++){
+     let numSumTemp = (numSumTotal[0] + array4[i])
+       numSumTotal.unshift(numSumTemp)
+       numSumTotal.pop()
+    }
+    return numSumTotal
+}
+console.log(numSum(addThese1))
+var addThese2 = []
 // // --> 0
 // Create a function that takes in an array of numbers and returns the index of the largest number.
 // var indexHighestNumber = [1, 4, 2, 3]
