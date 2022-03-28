@@ -25,6 +25,41 @@
 //var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 // --> [-7, 3, 5, 13]
 
+//Set up a function
+//Set up iteration using for loop
+//use modulo to find the number with a remainder more than 0
+//log the number in the newArray for the odd numbers
+
+
+
+
+// const oddNums = (array) => {
+//     let newArray = [];
+//     for(let i=0; i<array.length; i++)
+//         if(array[i] % 2 !== 0){
+//         newArray.push(array[i])
+//     }
+//     return newArray
+// }
+//  console.log(oddNums(testArr2))
+
+ //Output:[ -7, 3, 5, 13 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
 // var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
