@@ -32,7 +32,49 @@
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
 // var arr2 = [2, 7, 3, 5, 8, 10, 13]
-// // --> [7, 3, 5, 13]
+// // // --> [7, 3, 5, 13]
+
+// // Create a function - oddNums
+// // Parameter - array
+// // Look at every item in the array, iteration
+// // Make a decision about every item in the array - filter
+// // Decide if the value is odd and return the value
+
+// const oddNums = (array) => {
+//     return array.filter((value,num) =>{
+//         return value % 2 !== 0
+//     })
+// }
+// console.log(oddNums([2, 7, 3, 5, 8, 10, 13]));
+// Output: [ 7, 3, 5, 13 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
 // var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // --> "nicework"
