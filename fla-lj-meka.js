@@ -85,10 +85,6 @@ console.log(arrayToString(comboArr))
 
 
 
-
-
-
-
 // Create a function that takes in an array of numbers and returns the sum.
 // var addThese1 = [1, 2, 3, 4]
 // // --> 10
