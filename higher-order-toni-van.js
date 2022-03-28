@@ -29,8 +29,37 @@
 // console.log("Odd arrays", oddNum);
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
-// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
-// // --> "nicework"
+//  var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// // // --> "nicework"
+//
+// //psuedo code
+// //create function - strainer
+// //parameters will be an arrays
+// //typOf is what were going to do
+// //need a filter
+// //data type will be an object
+//
+// const strainer = (array, dataType) => {
+//   return array.filter(value => {
+//     return typeof value === dataType
+//   } )
+// }
+// console.log(strainer(comboArr, "number"))
+
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 // // --> [58, "abcd", true]
+
+//create a function - strain2
+//parameters will be an array
+//typeof
+//using the .filter functions
+// data type will be mixed -  boolean , number and string
+
+const strain2 = (array) => {
+  return array.filter(value => {
+    //return typeof value === dataType
+return value !== false && !== 0 && !== " "
+  })
+}
+console.log(strain2(filterArrayValues))
