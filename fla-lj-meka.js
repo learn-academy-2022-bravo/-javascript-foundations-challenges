@@ -57,11 +57,35 @@
 
 
 
-
-
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
 // var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
-// // --> "nicework"
+// // // --> "nicework"
+
+// // create a function that takes in an array of number and letters
+// // return a new string with only the letters
+// // use typeof method to identify just the letters
+// // use a for loop
+// // input: [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+// // output: "nicework"
+
+
+
+const arrayToString = (wordSoup) => {
+    let storageArray = []
+    for (let i = 0; i < wordSoup.length; i++) {
+       if(typeof wordSoup[i] == "string")
+        storageArray.push(wordSoup[i])
+    }
+    return storageArray.join("")
+}
+
+console.log(arrayToString(comboArr))
+
+
+
+
+
+
 
 
 
@@ -123,3 +147,14 @@
 // As a user, if I guess the "answer" correctly I am notified that I won.
 // As a user, I can continue to guess the "answer" until I am correct.
 // STRETCH: As a user, if I have not guessed the correct number in seven tries I see a losing message.
+
+
+
+
+
+
+
+
+
+
+
