@@ -71,13 +71,13 @@
 // return elements without (false, null, 0, or blank values)
 //utilize || <-or statement to identify ^
 //console.log
-var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
-
-const truTru = filterArrayValues.filter(value => {
-    return value !== " " && value !== 0 && value !== false && value !== null
-}) 
-
-console.log("Filtered array", truTru)
+// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+//
+// const truTru = filterArrayValues.filter(value => {
+//     return value !== " " && value !== 0 && value !== false && value !== null
+// })
+//
+// console.log("Filtered array", truTru)
 
 
 // string no blank strings              done
@@ -93,6 +93,18 @@ console.log("Filtered array", truTru)
 // var str = "javascript is awesome"
 // // --> "jvscrpt s wsm"
 // ```
+//Create a function called notVowels
+//Create a parameter called string
+//Identify each element, use an iteration
+//Utilize .filter method
+//Return string without vowels
+//Console.log result
+
+const str = "javascript is awesome"
+
+const notVowels = str.replace(/[aeiou]/gi, '')
+
+console.log(notVowels)
 
 // 2. Create a function that takes in two arrays as arguments returns one array with no duplicate values.
 
