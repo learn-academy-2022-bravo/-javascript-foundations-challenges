@@ -116,17 +116,75 @@
 
 
 // Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
-// var arrayLength = 6
-// var arrayValue = 0
+var arrayLength = 6
+var arrayValue = 0
 // // --> [0, 0, 0, 0, 0, 0]
 //
 // var arrayLength = 4
 // var arrayValue = 11
 // // --> [11, 11, 11, 11]
+
+// const returnFirstNum = (arrV,arrL) => {
+// const newArray = [...Array(arrL)].map(x => arrV)
+// return newArray
+
+// }
+// console.log(returnFirstNum(arrayValue,arrayLength))
+var arrayLength = 4
+var arrayValue = 11
+// // --> [11, 11, 11, 11]
+
+// const bob = (arrL,arrV) =>{
+//     const newArray =[]
+//     for(let i =0; i < arrL; i++){
+
+//     }
+// }
+ 
+// newArray = new Array(arrayLength, arrayValue)
+// const newArray = []
+// for(let i =0; i < arrayLength;i++){
+//     newArray.push(arrayValue)
+// }
+// console.log(newArray)
+
+var arrayLength = 6
+var arrayValue = 0
+
+const number = (value, length) => {
+  let numberLength = []
+  for(let i = 0; i < length; i++){
+    numberLength.push(value) //<---orders.push pushes that into the let orders = []
+  }
+  return numberLength //<--- this returns our array "orders"
+}
+
+// This function is dynamic because we can pass multiple variables
+console.log(number(arrayValue, arrayLength));
+console.log(number(arrayValue,arrayLength));
+console.log(number(11,4));
+console.log(number(0,6));
+
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
 // var addUp1 = 4
 // // 1 + 2 + 3 + 4 = 10
 // // --> 10
+
+const addUp = (num) => {
+const arr1 = []
+for(let i = 1; i <= num; i++){
+    arr1.push(i)
+}
+return arr1.reduce((a, b)=> a + b, 0)
+}
+console.log(addUp(4))
+
+
+
+
+
+
+
 //
 // var addUp2 = 10
 // // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
@@ -134,9 +192,19 @@
 //
 // var addUp3 = 600
 // // --> 180300
+
 // EPIC Challenges
 //
 // Create a function called highLow that takes in a number and returns whether the number is higher or lower than the "answer".
+
+const highLow = (num) => {
+
+
+
+
+}
+
+
 // Create an HTML page and link your JavaScript file. More info here.
 // As a user, I see a prompt or input where I can guess a number between 1 and 100 (both inclusive).
 // As a user, I can see if my guess is too high or too low.
