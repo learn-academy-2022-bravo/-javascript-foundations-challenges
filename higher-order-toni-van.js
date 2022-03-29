@@ -61,3 +61,33 @@
 //  value !== " " && value !== null && value !== false && value !== 0)
 // }
 // console.log(strain2(filterArrayValues))
+
+// Create a function that takes in a string and returns a new string with all the vowels removed.
+// var str = "javascript is awesome"
+// // --> "jvscrpt s wsm"
+//
+// const strain3 = (array) => {
+//   return array.replace(/a/g, "").replace(/e/g ,"").replace(/i/g ,"").replace(/o/g ,"").replace(/u/g ,"")
+// }
+// console.log(strain3(str));
+
+// Create a function that takes in two arrays as arguments returns one array with no duplicate values.
+// var arr1 = [3, 7, 10, 5, 4, 3]
+// var arr2 = [7, 8, 2, 1, 5, 4]
+// --> [3, 7, 10, 5, 4, 8, 2, 1]
+// var arrCombine = arr1.concat(arr2.filter((item) => arr1.indexOf(item) < 0))
+// myFinalArray = myArray1.concat(myArray2.filter((item) => myArray1.indexOf(item) < 0));
+
+// console.log(arrCombine);
+
+// var arr1 = [3, 7, 10, 5, 4, 3]
+// var arr2 = [7, 8, 2, 1, 5, 4]
+// // var arrCombine = arr1.concat(arr2.filter((item) => arr1.indexOf(item) < 0));
+// // console.log(arrCombine);
+//
+// let arr3 = arr1.concat(arr2);
+// arr3 = arr3.filter((item,index)=>{
+//    return (arr3.indexOf(item) == index)
+//    })
+//
+// console.log(arr3);
