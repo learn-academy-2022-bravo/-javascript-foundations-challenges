@@ -35,6 +35,20 @@
 
 
 
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// // --> "nicework"
+
+const stringOnly = comboArr.filter(value => {
+    return typeof value == "string"
+    return value.join("")
+}) 
+
+console.log("original array: ", comboArr)
+console.log("filtered array: ", stringOnly)
+
+
+
+
 
 
 
