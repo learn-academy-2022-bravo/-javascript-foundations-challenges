@@ -30,9 +30,10 @@
 
 
 
-// Write a function that takes in an array of numbers and returns a new array with only odd numbers.
-// var arr2 = [2, 7, 3, 5, 8, 10, 13]
+//Write a function that takes in an array of numbers and returns a new array with only odd numbers.
+//var arr2 = [2, 7, 3, 5, 8, 10, 13]
 // // // --> [7, 3, 5, 13]
+
 
 // // Create a function - oddNums
 // // Parameter - array
@@ -50,6 +51,33 @@
 
 
 
+//Write a function that takes in an array of numbers and letters and returns a string with only the letters.
+//HINT: Use typeof method
+//var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// --> "nicework"
+
+//create a function-nice
+//function takes in array of numbers
+//function takes in array of letters
+//returns a string with only letter
+
+const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+
+const nice = (array, string => {
+    return array.filter(value => {
+	return typeof value === string;
+})
+}
+console.log(nice typeof 'string')
+
+
+//console.log(typeof 'blubber');
+//
+// console.log(typeof true);
+// // expected output: "boolean"
+//
+// console.log(typeof undeclaredVariable);
+// // expected output: "undefined"
 
 
 
@@ -58,26 +86,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
-// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
-// // --> "nicework"
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
 // var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 // // --> [58, "abcd", true]
