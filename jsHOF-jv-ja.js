@@ -34,9 +34,11 @@
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
  const filterArrayValues = [58, "", "abcd", true, null, false, 0]
 
+
+
 const sifter = (value) => {
     return value.filter(value => {
-        if (value !== false ||  value !== null || value !== "" || value !== 0) {
+        if (value !== false) {
             return value
         } 
     })
@@ -46,9 +48,20 @@ console.log(sifter(filterArrayValues))
 // STRETCH Challenges
 
 // Create a function that takes in a string and returns a new string with all the vowels removed.
-// var str = "javascript is awesome"
+ const str = "javascript is awesome"
+
+const noVowels = str.replace(/[aeiou]/gi, "")
+
+console.log(noVowels)
 // // --> "jvscrpt s wsm"
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
-// var arr1 = [3, 7, 10, 5, 4, 3]
-// var arr2 = [7, 8, 2, 1, 5, 4]
+ const arr1 = [3, 7, 10, 5, 4, 3];
+ const arr2 = [7, 8, 2, 1, 5, 4];
+ let arr3 = arr1.concat(arr2);
+//  arr3 = arr3.filter((item,index) => {
+//     return (arr3.indexOf(item) == index)
+// })
+arr3 = [...new Set([...arr1,...arr2])]
+ console.log(arr3)
+
 // // --> [3, 7, 10, 5, 4, 8, 2, 1]
