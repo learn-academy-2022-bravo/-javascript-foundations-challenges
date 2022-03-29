@@ -3,7 +3,7 @@ var arr1 = [3, 9, 15, 4, 10]
 const multArray = (array) => {
     return array.map(value => {
         return value * 10
-    }) 
+    })
 }
 console.log(multArray(arr1))
 // // --> [30, 90, 150, 40, 100]
@@ -32,9 +32,27 @@ const returnArray = (array) => {
     let filtered = filterArrayValues.filter(value => {
         return value !== false && value !== 0 && value !== null && value !== " "
       })
-      
+
       console.log(filtered)
     }
     console.log(returnArray(filterArrayValues))
 
 // // --> [58, "abcd", true]
+
+// Create a function that takes in a string and returns a new string with all the vowels removed.
+ var str = "javascript is awesome"
+ let strArray = str.split('');
+const removed = (array) => {
+  return array.filter(value => {
+    return value !== `a` && value !== `e` && value !== `i` && value !== `o` && value !== `u`
+  })
+
+}
+console.log(removed(strArray).join(''));
+
+// // --> "jvscrpt s wsm"
+// Create a function that takes in two arrays as arguments returns one array with no duplicate values.
+var arr1 = [3, 7, 10, 5, 4, 3]
+var arr2 = [7, 8, 2, 1, 5, 4]
+
+// // --> [3, 7, 10, 5, 4, 8, 2, 1]
