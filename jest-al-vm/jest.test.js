@@ -46,11 +46,11 @@
 
 //   console.log(amIStressed("yes"))
 
-Write the test for a function that returns "in budget" if a price is lower than $300.
-Write the function that will make the test pass.
+// Write the test for a function that returns "in budget" if a price is lower than $300.
+// Write the function that will make the test pass.
 
 
-describe("inBudget", () => {
-    it returns in budget" if a price is lower than $300.")
-})
+// describe("inBudget", () => {
+//     it returns in budget" if a price is lower than $300.")
+// })
     
