@@ -86,7 +86,7 @@
 //   }
 // }
 // // Write the test for a function called rick that returns "Morty".
-describe ("rick"() => {
+describe ("rick",() =>{
   it ("returns Morty", () => {
     expect(rick()).toEqual("Morty")
   })
