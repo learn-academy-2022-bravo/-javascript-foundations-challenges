@@ -47,7 +47,7 @@
 // console.log(strainer(comboArr, "number"))
 
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 // // --> [58, "abcd", true]
 
 //create a function - strain2
@@ -56,10 +56,8 @@ var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 //using the .filter functions
 // data type will be mixed -  boolean , number and string
 
-const strain2 = (array) => {
-  return array.filter(value => {
-    //return typeof value === dataType
-return value !== false && !== 0 && !== " "
-  })
-}
-console.log(strain2(filterArrayValues))
+// const strain2 = (array) => {
+//   return array.filter(value =>
+//  value !== " " && value !== null && value !== false && value !== 0)
+// }
+// console.log(strain2(filterArrayValues))
