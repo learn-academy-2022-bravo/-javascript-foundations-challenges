@@ -24,7 +24,7 @@
 //   }
 
 // Update the person object with a method that logs "Arthur Dent is from planet Earth".
- 
+
 // const person = {
 //     firstName: "Arthur",
 //     lastName: "Dent",
@@ -84,9 +84,9 @@
 // banana
 
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
-// // howTo: function() {
+// howTo: function() {
 //       return "The ingredients for a " + this.name + " " + this.type + " are " + this.ingredients
-// // console.log(lunch.howTo())
+// console.log(lunch.howTo())
 // The ingredients for a PB and Banana sandwich are bread, peanut butter, banana.
 
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
@@ -100,23 +100,50 @@
 // }
 // Consider this variable:
 
+// const animals = [
+//   { name: "Waffles", type: "dog", age: 7 },
+//   { name: "Fluffy", type: "cat", age: 14 },
+//   { name: "Spelunky", type: "dog", age: 4 },
+//   { name: "Hank", type: "cat", age: 11 }
+// ]
+// // // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+//
+// // const catsOnly = animals.filter(value => value.type === "cat")
+//
+// // console.log(catsOnly)
+//
+// // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+// const animalsNames =(array) => {
+//   return array.map(obj => {
+//     return obj.name
+//   })
+// }
+// console.log(animalsNames(animals))
+// [ 'Waffles', 'Fluffy', 'Spelunky', 'Hank' ]
+
+// Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+// const animalsNames =(array) => {
+//   return array.filter(obj => {
+//     if (obj.age > 10){
+//     return obj.name
+// }
+// })
+// }
+// console.log(animalsNames(animals))
+// { name: 'Fluffy', type: 'cat', age: 14 },
+// { name: 'Hank', type: 'cat', age: 11 }
+// Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 const animals = [
   { name: "Waffles", type: "dog", age: 7 },
   { name: "Fluffy", type: "cat", age: 14 },
   { name: "Spelunky", type: "dog", age: 4 },
   { name: "Hank", type: "cat", age: 11 }
 ]
-// // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+const animalSentence = array.map(sentenceMaker(array.name)) => {
+  return "This pet is named " + array.name + "  and they are " + array.age + " years old."
+}
 
-// const catsOnly = animals.filter(value => value.type === "cat")
-
-// console.log(catsOnly)
-
-// Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
-
-
-// Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
-// Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
+console.log(animalSentence(animals));
 // Consider this variable:
 
 // const author = {
