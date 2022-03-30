@@ -8,16 +8,16 @@ const person = {
 }
 
 // Write the code that accesses the first name of the person object.
- console.log(person.firstName)
+console.log(person.firstName)
 
 // Write the code that accesses the last name of the person object.
- console.log(person.lastName)
+console.log(person.lastName)
 
 // Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
- console.log(person.homePlanet)
+console.log(person.homePlanet)
 
 // Update the person object with a method that logs "Arthur Dent is from planet Earth".
-   console.log(person.getData())
+console.log(person.getData())
 
 const product = {
   name: "chair",
@@ -28,7 +28,7 @@ const product = {
 }
 
 // Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
-   console.log(product.describeProduct())
+console.log(product.describeProduct())
 
 // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
 const product = {
@@ -51,10 +51,10 @@ const lunch = {
 }
 
 // Write the code that accesses the ingredients property.
- console.log(lunch.ingredients)
+console.log(lunch.ingredients)
 
 // Write the code that access the third ingredient of the lunch object.
- console.log((lunch).ingredients[2])
+console.log((lunch).ingredients[2])
 
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 howTo: function() {
