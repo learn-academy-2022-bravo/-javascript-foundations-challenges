@@ -30,19 +30,30 @@
 
 // Consider this variable:
 //
-const product = {
-    name: "chair",
-    price: 24.99
-}
-// Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
+// // Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
 
-const describeProduct = (productObject) => {
-    return `The product is a ${product.name}. It costs $${product.price}`
-}
-console.log(describeProduct())
+// const describeProduct = (productObject) => {
+//     return `The product is a ${product.name}. It costs $${product.price}`
+// }
+// console.log(describeProduct())
+
+
 // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
 // Consider this variable:
-//
+
+// const product = {
+//     name: "chair",
+//     price: 24.99
+// }
+
+// const totalWithTax = (productObject) => {
+//     let total = productObject.price * 1.07
+//     return total.toFixed(2)
+// }
+
+// // let total = totalWithTax().toFixed(2)
+// console.log(totalWithTax(product))
+
 // const lunch = {
 //   name: "PB and Banana",
 //   type: "sandwich",
