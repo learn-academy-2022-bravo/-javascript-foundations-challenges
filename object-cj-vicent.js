@@ -24,7 +24,7 @@
 //   }
 
 // Update the person object with a method that logs "Arthur Dent is from planet Earth".
-
+ 
 // const person = {
 //     firstName: "Arthur",
 //     lastName: "Dent",
@@ -52,15 +52,18 @@
 
 // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
 
-const product = {
-  name: "chair",
-  price: 24.99,
-    totalWithTax: function() {
-        return this.price * 1.07
-            let totalPrice = Math.round(totalWithTax())
-    }
-}
-console.log(total())
+// const product = {
+//   name: "chair",
+//   price: 24.99,
+//     totalWithTax: function() {
+//         let totalPrice = (this.price * 1.07).toFixed(2)
+//         let finalTotalPrice = parseFloat(totalPrice)
+//         return finalTotalPrice
+//     }
+// }
+
+// console.log(product.totalWithTax())
+
 // 26.7393
 // Pseudo Code
 // create a function called totalWithTax
@@ -97,20 +100,21 @@ console.log(total())
 // }
 // Consider this variable:
 
-// const animals = [
-//   { name: "Waffles", type: "dog", age: 7 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 }
-// ]
+const animals = [
+  { name: "Waffles", type: "dog", age: 7 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 }
+]
 // // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
-// const catsOnly = (array) => {
-//   return array.filter(obj.type === "cat")
-//   }
-// console.log(catsOnly(animals))
 
+// const catsOnly = animals.filter(value => value.type === "cat")
+
+// console.log(catsOnly)
 
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+
+
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
