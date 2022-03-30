@@ -106,6 +106,16 @@ const animals = [
 // console.log(catFinder(animals))
 
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+
+// const animalNames = (array) => {
+//     return array.map(obj =>
+//         obj.name
+//     )
+// }
+// console.log(animalNames(animals))
+
+
+
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
