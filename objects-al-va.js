@@ -63,11 +63,11 @@
 // **Consider this variable:**
 //
 // ```javascript
-const lunch = {
-  name: "PB and Banana",
-  type: "sandwich",
-  ingredients: ["bread", "peanut butter", "banana"]
-}
+// const lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"]
+// }
 // ```
 // - Write the code that accesses the ingredients property.
 // - Write the code that access the third ingredient of the lunch object.
@@ -75,15 +75,44 @@ const lunch = {
 // - Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 //
 
-console.log(lunch.ingredients)
+// const lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"]
+// }
 
-console.log(lunch.ingredients[2])
+// console.log(lunch.ingredients)
+// console.log(lunch.ingredients[2])
+// console.log(lunch.ingredients)
+
+// const lastIngredient = lunch.ingredients.pop()
+// console.log(lunch.ingredients)
+
+
+// lunch.fullSentence = function() {
+//   return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients.slice(0).join(", ")}, and a ${lastIngredient}.`
+//   return lunch.ingredients.push(lastIngredient)
+// // person.homePlanet = "Earth";
+// // console.log(person)
+
+//   }
+// console.log(lunch.ingredients)
+//   console.log(lastIngredient)
+//   console.log(lunch.fullSentence());
+// console.log(lunch.ingredients)
+
+const lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"]
+}
 
 lunch.fullSentence = function() {
-  return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients[0]}, ${lunch.ingredients[1]} and a ${lunch.ingredients[2]}.`
+  return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients.slice(0, 2).join(', ')} and a ${lunch.ingredients[2]}.`
 
   }
 console.log(lunch.fullSentence());
+
 
 
 
