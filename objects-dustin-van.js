@@ -83,32 +83,26 @@
 //
 
 
-const animals = [
-    { name: "Waffles", type: "dog", age: 7 },
-    { name: "Fluffy", type: "cat", age: 14 },
-    { name: "Spelunky", type: "dog", age: 4 },
-    { name: "Hank", type: "cat", age: 11 }
-]
 
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
 
 // const catFinder = (array) => {
-//     return array.map(obj => {
-//         return obj.type
-//     })
-// }
-
-// const catFinder = (array) => {
-//     return array.filter(obj =>
-//         obj.type === "cat"
-//     )
+    //     return array.map(obj => {
+        //         return obj.type
+        //     })
+        // }
+        
+        // const catFinder = (array) => {
+            //     return array.filter(obj =>
+            //         obj.type === "cat"
+            //     )
 // }
 // console.log(catFinder(animals))
 
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
 
 // const animalNames = (array) => {
-//     return array.map(obj =>
+    //     return array.map(obj =>
 //         obj.name
 //     )
 // }
@@ -117,6 +111,24 @@ const animals = [
 
 
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+
+const animals = [
+    { name: "Waffles", type: "dog", age: 7 },
+    { name: "Fluffy", type: "cat", age: 14 },
+    { name: "Spelunky", type: "dog", age: 4 },
+    { name: "Hank", type: "cat", age: 11 }
+]
+
+const animalAge = (array) => {
+    let newArray = array.filter(value =>
+        value.age > 10
+        )
+        return newArray
+}
+// const theAnimalAge = animals.filter(value => value.age > 10)
+
+console.log(animalAge(animals))
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
 //
