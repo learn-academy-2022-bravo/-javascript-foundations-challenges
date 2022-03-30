@@ -163,17 +163,36 @@ const animals = [
   { name: "Hank", type: "cat", age: 11 },
 ]
 
-const olderAnimal = (anything) => {
-  return anything.filter(something => {
-    if (something.age > 10 ){
-      return something.name
-    }
-  })
-}
+let {name} = animals.map
 
-console.log(olderAnimal(animals));
+console.log(name)
+
+// const olderAnimal = (animals) => {
+//   return animals.filter(animals => {
+//     if (animals.age > 10 ){
+//       return animals.name
+//     }
+//   })
+// }
 
 
+// const olderAnimal = (animals) => {
+//   return animals.filter(animals => { 
+//     return animals.age > 10
+//   })
+//   }
+
+// console.log(olderAnimal(animals));
+
+// const olderAnimal = (anything) => {
+//   return anything.filter(something => {
+//     if (something.age > 10 ){
+//       return something.name
+//     }
+//   })
+// }
+
+// console.log(olderAnimal(animals));
 
 
   // return house.map(car => {
