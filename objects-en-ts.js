@@ -10,7 +10,11 @@ console.log(person.lastName)
 person[`homePlanet`] = `Earth`
 console.log(person);
 // Update the person object with a method that logs "Arthur Dent is from planet Earth".
-console.log(`${person.firstName} ${person.lastName} is from planet ${person.homePlanet}`);
+person[`upDate`] = function () {
+  return `${person.firstName} ${person.lastName} is from planet ${person.homePlanet}`
+}
+console.log(person.upDate())
+// console.log(`${person.firstName} ${person.lastName} is from planet ${person.homePlanet}`);
 // Consider this variable:
 //
 const product = {
@@ -40,22 +44,49 @@ console.log(lunch.ingredients);
 console.log(lunch.ingredients[2])
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 const lunchFunction = (key1 , key2, key3) => {
-  return `The ingredients for a ${key1} ${key2} are ${key3}.`
+  return `The ingredients for a ${key1} ${key2} are ${key3[0]} ${key3[1]} and ${key3[2]}.`
 }
-console.log(lunchFunction(lunch.name, lunch.type, lunch.ingredients
+console.log(lunchFunction(lunch.name, lunch.type, lunch.ingredients))
   // dont forget the back tics
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+lunch[`upDate`] = function () {
+  return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients[0]} ${lunch.ingredients[1]} and ${lunch.ingredients[2]}.`
+}
+console.log(lunch.upDate())
+
 // Consider this variable:
 //
-// const animals = [
-//   { name: "Waffles", type: "dog", age: 7 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 }
-// ]
+const animals = [
+  { name: "Waffles", type: "dog", age: 7 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 }
+]
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+const onlyCat = animals.filter(animals => {
+  return animals.type == "cat"
+})
+console.log(onlyCat)
+
+
+
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+
+const onlyName = (array) => {
+  return array.map(butter => butter.name)
+}
+console.log(onlyName(animals))
+
+
+
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+const onlyOld = animals.filter(animals => {
+  return animals.age > 10
+})
+console.log(onlyOld)
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
 //
