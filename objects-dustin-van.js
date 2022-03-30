@@ -83,6 +83,18 @@
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
 //
+// const lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"],
+//   combo: function () {
+//     return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients[0]},
+//     ${this.ingredients[1]}, and ${this.ingredients[2]}. `
+//     }
+// }
+//
+// console.log(lunch.combo());
+
 // const animals = [
 //   { name: "Waffles", type: "dog", age: 7 },
 //   { name: "Fluffy", type: "cat", age: 14 },
