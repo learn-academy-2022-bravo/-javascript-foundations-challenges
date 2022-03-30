@@ -11,12 +11,12 @@
 // returns "drink coffee" if tired
 // returns "keep working" if not tired
 
-describe("caffeine", () => {
-  it("returns a string that says drink coffee", () => {
-    expect(caffeine("tired")).toEqual("drink coffee")
-    expect(caffeine("not tired")).toEqual("keep working")
-  })
-})
+// describe("caffeine", () => {
+//   it("returns a string that says drink coffee", () => {
+//     expect(caffeine("tired")).toEqual("drink coffee")
+//     expect(caffeine("not tired")).toEqual("keep working")
+//   })
+// })
 
 
 //FAIL  ./jest.test.js
@@ -39,25 +39,96 @@ describe("caffeine", () => {
 
 //REFACTOR IF NEEDED-GREEN
 
-const caffeine = (string) => {
-  if(string === "tired"){
-    return "drink coffee"
-  } else {
-    return "keep working"
-  }
-}
+// const caffeine = (string) => {
+//   if(string === "tired"){
+//     return "drink coffee"
+//   } else {
+//     return "keep working"
+//   }
+// }
 
-PASS  ./jest.test.js
- caffeine
-   ✓ returns a string that says drink coffee (4 ms)
+// PASS  ./jest.test.js
+//  caffeine
+//    ✓ returns a string that says drink coffee (4 ms)
 
 
 
 
 // Write the function that will make the test pass.
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
+
+// WRITE THE TEST-RED
+// create a function chill
+// returns "relax" if stressed
+// returns "keep going" if not stressed
+
+// describe("chill", () => {
+//   it("returns a string that says relax", () => {
+//     expect(chill("stressed")).toEqual("relax")
+//     expect(chill("not stressed")).toEqual("keep going")
+//   })
+// })
+
+// GOOD FAILURE
+// FAIL  ./jest.test.js
+// chill
+//   ✕ returns a string that says relax (1 ms)
+
+// WRITE THE CODE -- GREEN
+
+// const chill = (string) => {
+//   if(string === "stressed"){
+//     return "relax"
+//   } else if(string === "not stressed") {
+//     return "keep going"
+//   }
+// }
+
+// PASS  ./jest.test.js
+// chill
+//   ✓ returns a string that says relax (1 ms)
+
+
+// REFACTOR 
+
+// const chill = (string) => {
+//   if(string === "stressed"){
+//     return "relax"
+//   } else {
+//     return "keep going"
+//   }
+// }
+
+// PASS  ./jest.test.js
+// chill
+//   ✓ returns a string that says relax (1 ms)
+
+
 // Write the function that will make the test pass.
 // Write the test for a function that returns "in budget" if a price is lower than $300.
+
+
+// WRITE THE TEST-RED
+// create a function - budget
+// returns "in budget" if price is lower than $300
+
+describe("budget", () => {
+  it("returns a string that says in budget", () => {
+    expect(budget(price <= 300)).toEqual("in budget")
+  })
+})
+
+
+//WRITE THE CODE -- GREEN
+
+const budget = (price) => {
+    if(price <= 300){
+      return "in budget"
+    } 
+  }
+
+
+
 // Write the function that will make the test pass.
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
 // Write the function that will make the test pass.
