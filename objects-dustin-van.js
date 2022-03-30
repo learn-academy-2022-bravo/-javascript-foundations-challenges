@@ -60,8 +60,26 @@
 //   ingredients: ["bread", "peanut butter", "banana"]
 // }
 // Write the code that accesses the ingredients property.
+
+  // console.log(lunch.ingredients);
+  // [ 'bread', 'peanut butter', 'banana' ]
+
 // Write the code that access the third ingredient of the lunch object.
+
+  // console.log(lunch.ingredients[2]);
+  // banana
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+// const lunchMaker = (object) => {
+//   return `The ingredients for a PB and Banana sandwich are ${object.ingredients[0]} ${object.ingredients[1]}, and ${object.ingredients[2]}`
+// }
+//
+// console.log(lunchMaker(lunch));
+// The ingredients for a PB and Banana sandwich are bread peanut butter, and banana
+
+
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
 //
