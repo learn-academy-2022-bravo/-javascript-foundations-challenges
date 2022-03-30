@@ -124,16 +124,16 @@
 
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 
-const animals = [
-  { name: "Waffles", type: "dog", age: 7 },
-  { name: "Fluffy", type: "cat", age: 14 },
-  { name: "Spelunky", type: "dog", age: 4 },
-  { name: "Hank", type: "cat", age: 11 }
-]
-const animalFacts = animals.map (animal => {
-  return `The ${animal.type} named ${animal.name} and is ${animal.age} years old`
-})
-console.log(animalFacts)
+// const animals = [
+//   { name: "Waffles", type: "dog", age: 7 },
+//   { name: "Fluffy", type: "cat", age: 14 },
+//   { name: "Spelunky", type: "dog", age: 4 },
+//   { name: "Hank", type: "cat", age: 11 }
+// ]
+// const animalFacts = animals.map (animal => {
+//   return `The ${animal.type} named ${animal.name} and is ${animal.age} years old`
+// })
+// console.log(animalFacts)
 
 
 // Consider this variable:
@@ -143,8 +143,17 @@ console.log(animalFacts)
 //   genre: "science fiction"
 // }
 // Write the code that destructures the author object so that the following code snippet will run successfully:
-// console.log(`${name} is a ${genre} author`)
+// const {name, genre} = author
+
+
+
+
+//  console.log(`${author.name} is a ${author.genre} author`)
 // // Output: "H. G. Wells is a science fiction author"
+
+
+
+
 // Consider this variable:
 
 // const pokeOne = {
@@ -157,26 +166,68 @@ console.log(animalFacts)
 //   pokemon_type: "Water"
 // }
 // Create a function called describePokemon that take an object like the ones above and uses destructuring to return a description of the Pokemon so that the following code snippet will run successfully:
+
+// const {species, pokemon_type} = pokeOne
+// const describePokemon = () => {
+//     return `${species} is ${pokemon_type} pokemon`
+// }
+
 // console.log(describePokemon(pokeOne))
-// // Output: "Charmandar is a Fire pokemon"
+// Output: "Charmandar is a Fire pokemon"
+
+// const {species, pokemon_type} = pokeTwo
+// const describePokemon = () => {
+//     return `${species} is ${pokemon_type} pokemon`
+// }
+
+// console.log(describePokemon(pokeTwo))
+
 // console.log(describePokemon(pokeTwo))
 // // Output: "Magikarp is a Water pokemon"
 // Consider this variable:
 
+
+
 // const triangleDimensions = {
 //   base: 2,
-//   height: 5
-// }
-// Modify the triangleDimensions object to have a method that returns the area of the triangle.
-// Write the code that will update the base to be the value of 6.
-// Consider this variable:
-
-// const learn = {
-//   cohorts: {
-//     "2021": ["Alpha", "Bravo", "Charlie", "Delta", "Echo"],
-//     "2022": ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"]
+//   height: 5,
+//   area: function () {
+//       return (this.base * this.height) * .5
 //   }
 // }
+// console.log(triangleDimensions.area())
+// Modify the triangleDimensions object to have a method that returns the area of the triangle.
+
+// Write the code that will update the base to be the value of 6.
+
+
+// const newDimension = triangleDimensions.map (obj => {
+//     if (obj.base === 2) {
+//         return {...obj, base: 6}
+//     }
+//     return obj;
+// })
+// console.log(newDimension)
+
+
+
+// Consider this variable:
+
+let learn = {
+  cohorts: {
+    cohort1: ["Alpha", "Zulu", "Charlie", "Delta", "Echo"],
+    cohort2: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"]
+  }
+}
 // Write the code that logs the name of your cohort.
+
+// console.log(learn.cohorts["2022"][1])
+
+// let { bev1, bev2, bev3 } = breakfast.beverage
+// console.log(bev1)
+// console.log(bev2)
+// console.log(bev3)
 // Write the code that uses destructuring to log the name of your cohort.
+let { cohort1, cohort2 } = learn.cohorts
+console.log(cohort2[1])
 // Create a function that takes an object like the one above and returns an array with a string of every cohort name and year.
