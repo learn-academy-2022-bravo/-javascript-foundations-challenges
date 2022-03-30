@@ -101,17 +101,17 @@
 //   console.log(lunch.fullSentence());
 // console.log(lunch.ingredients)
 
-const lunch = {
-  name: "PB and Banana",
-  type: "sandwich",
-  ingredients: ["bread", "peanut butter", "banana"]
-}
+// const lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"]
+// }
 
-lunch.fullSentence = function() {
-  return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients.slice(0, 2).join(', ')} and a ${lunch.ingredients[2]}.`
+// lunch.fullSentence = function() {
+//   return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients.slice(0, 2).join(', ')} and a ${lunch.ingredients[2]}.`
 
-  }
-console.log(lunch.fullSentence());
+//   }
+// console.log(lunch.fullSentence());
 
 
 
@@ -124,15 +124,32 @@ console.log(lunch.fullSentence());
 // **Consider this variable:**
 //
 // ```javascript
-// const animals = [
-//   { name: "Waffles", type: "dog", age: 7 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 }
-// ]
+const animals = [
+  { name: "Waffles", type: "dog", age: 7 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 },
+  { house: "fsdf", name: "pizza"}
+]
 // ```
 // - Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+
+// const onlyCats = animals.filter(value => value.type === "cat")
+
+// console.log(onlyCats)
 // - Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+
+const animalsName = (house) => {
+  return house.map(car => {
+    return car.name
+  })
+}
+console.log(animalsName(animals))
+
+
+// const onlyAnimals = animals.filter(value => a[0])
+
+// console.log(onlyAnimals)
 // - Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
 // - Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 //
