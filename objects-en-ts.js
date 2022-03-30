@@ -2,19 +2,19 @@ const person = {
   firstName: "Arthur",
   lastName: "Dent"
 }
-// Write the code that accesses the first name of the person object.
+// // Write the code that accesses the first name of the person object.
 console.log(person.firstName);
-// Write the code that accesses the last name of the person object.
+// // Write the code that accesses the last name of the person object.
 console.log(person.lastName)
-// Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
+// // Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
 person[`homePlanet`] = `Earth`
 console.log(person);
-// Update the person object with a method that logs "Arthur Dent is from planet Earth".
+// // Update the person object with a method that logs "Arthur Dent is from planet Earth".
 person[`upDate`] = function () {
   return `${person.firstName} ${person.lastName} is from planet ${person.homePlanet}`
 }
-console.log(person.upDate())
-// console.log(`${person.firstName} ${person.lastName} is from planet ${person.homePlanet}`);
+//console.log(person.upDate())
+console.log(`${person.firstName} ${person.lastName} is from planet ${person.homePlanet}`);
 // Consider this variable:
 //
 const product = {
@@ -57,7 +57,7 @@ lunch[`upDate`] = function () {
 console.log(lunch.upDate())
 
 // Consider this variable:
-//
+
 const animals = [
   { name: "Waffles", type: "dog", age: 7 },
   { name: "Fluffy", type: "cat", age: 14 },
@@ -69,33 +69,40 @@ const onlyCat = animals.filter(animals => {
   return animals.type == "cat"
 })
 console.log(onlyCat)
-
-
-
-// Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
-
+//
+//
+//
+// // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+//
 const onlyName = (array) => {
   return array.map(butter => butter.name)
 }
 console.log(onlyName(animals))
 
-
-
-// Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+//
+//
+// // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
 const onlyOld = animals.filter(animals => {
   return animals.age > 10
 })
 console.log(onlyOld)
 
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
+
+const sentenceArray = (array) => {
+  return array.map (value => `${value.name} is a ${value.type} and it is ${value.age} years old`)
+}
+console.log(sentenceArray(animals));
+
+
 // Consider this variable:
 //
-// const author = {
-//   name: "H. G. Wells",
-//   genre: "science fiction"
-// }
+const author = {
+  name: "H. G. Wells",
+  genre: "science fiction"
+}
 // Write the code that destructures the author object so that the following code snippet will run successfully:
-// console.log(`${name} is a ${genre} author`)
+//console.log(`${name} is a ${genre} author`)
 // // Output: "H. G. Wells is a science fiction author"
 // Consider this variable:
 //
