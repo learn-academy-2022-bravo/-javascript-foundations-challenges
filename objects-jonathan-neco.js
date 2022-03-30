@@ -33,14 +33,14 @@
 
 //Consider this variable:
 
-const product = {
-  name: "chair",
-  price: 24.99,
-
-  //addUp: function(){
-  //return "The product is a " + this.name + ". It costs $" + this.price + "."
-  // }
- }
+// const product = {
+//   name: "chair",
+//   price: 24.99,
+//
+//   //addUp: function(){
+//   //return "The product is a " + this.name + ". It costs $" + this.price + "."
+//   // }
+//  }
 
 // Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
 
@@ -52,19 +52,19 @@ const product = {
 //round it to 2 decimal places $2.00
 //Sales total $26.69
 
-let salesTax = {
-  tax: 1.7,
-  symbol:"$",
-  addUp1: function() {
-return totalPrice = this.symbol + product.price + this.tax
-}
+// let salesTax = {
+//   tax: 1.7,
+//   symbol:"$",
+//   addUp1: function() {
+// return totalPrice = this.symbol + product.price + this.tax
+// }
 
 //   addUp2: function() {
 // return salesTax.totalPrice
 //   }
 // }
 
-console.log(salesTax.addUp1())
+// console.log(salesTax.addUp1())
 // console.log(salesTax.addUp2())
 
 
@@ -75,25 +75,62 @@ console.log(salesTax.addUp1())
 //
 // const lunch = {
 //   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
+//   type: " sandwich",
+//   ingredients: ["bread", " peanut butter", " banana"]
 // }
-// Write the code that accesses the ingredients property.
-// Write the code that access the third ingredient of the lunch object.
-// Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// // Write the code that accesses the ingredients property.
+// console.log(lunch.ingredients)
+// // [ 'bread', 'peanut butter', 'banana' ]
+//
+// // Write the code that access the third ingredient of the lunch object.
+// console.log(lunch.ingredients[2])
+// // banana
+//
+// // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// let pbSand = {
+//   string1: "The ingredients for a ",
+//   string2: " are ",
+//   string3: " and ",
+//   string4: ".",
+//   string5: ",",
+//   addUp: function(){
+//     return this.string1 + lunch.name + lunch.type + this.string2 + lunch.ingredients[0] + this.string5 + lunch.ingredients[1] + this.string5 + this.string3 +lunch.ingredients[2] + this.string4
+//   }
+// }
+// console.log(pbSand.addUp())
+// The ingredients for a PB and Banana sandwich are bread, peanut butter, and  banana.
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+//Look up ^
+
 // Consider this variable:
 //
-// const animals = [
-//   { name: "Waffles", type: "dog", age: 7 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 }
-// ]
+const animals = [
+  { name: "Waffles", type: "dog", age: 7 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 }
+]
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+const cats = animals.filter(value => value.type === "cat")
+return cats
+console.log(animals)
+
+
+// const onlyCats = (array) => {
+//   return array.map(obj => {
+//     return obj.type
+//   })
+// }
+// console.log(onlyCats(animals)
+
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+
+
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
+
 // Consider this variable:
 //
 // const author = {
