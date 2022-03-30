@@ -1,21 +1,28 @@
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
 // Write the function that will make the test pass.
 
-// describe("coffee", () => {
-//     it("logs drink coffee if you are tired and keep working if you are not tired"), () => {
-//         expect(coffee("drink coffee")).toEqual("if you are tired")
-//         expect(coffee("keep working")).toEqual("you are not tired")
-//     }
-// })
+describe("coffee", () => {
+    it("logs drink coffee if you are tired and keep working if you are not tired", () => {
+        expect(drinkCoffee("yes")).toEqual("drink coffee")
+        expect(drinkCoffee("no")).toEqual("keep working")
+    })
+})
 
 
-// const drinkCoffee = (string) => {
-//     if(string === "yes") {
-//         return "drink coffee"
-//     } else {
-//         return "keep working"
-//     }
-//   }   
+const drinkCoffee = (string) => {
+    if(string === "yes") {
+        return "drink coffee"
+    } else {
+        return "keep working"
+    }
+  }
+
+
+
+
+
+
+
 
 
 // const isThatSoup = (string) => {
@@ -31,7 +38,7 @@
 // Write the function that will make the test pass.
 
 // describe ("stress", () => {
-//  it(returns a string that says "relax if you are stressed and keep going if you are not.")   
+//  it(returns a string that says "relax if you are stressed and keep going if you are not.")
 // }
 // expect(stress()).toEqual("relax if you are stressed and keep going if you are not.")
 
@@ -42,7 +49,7 @@
 //     } else {
 //         return "keep going"
 //     }
-//   }   
+//   }
 
 //   console.log(amIStressed("yes"))
 
@@ -53,4 +60,3 @@
 // describe("inBudget", () => {
 //     it returns in budget" if a price is lower than $300.")
 // })
-    
