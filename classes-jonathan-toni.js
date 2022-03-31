@@ -79,7 +79,7 @@
 // console.log(hazLattee.latteeProfile())
 //OUTPUT: A hazelnut lattee with almond milk, double shot
 // Volume of a Cylinder
-
+// Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
 class Cylinder {
   constructor(radius, height){
     this.π = 3.1415
@@ -88,10 +88,10 @@ class Cylinder {
   }
 
   cylinderVolume(){
-    return `A ${this.π} lattee with ${this.radiu()}, ${this.heights()}`
+    return  `${this.π} * ${this.radii()} * ${this.heights()}`
   }
 
-  radiu(){
+  radii(){
     if(this.radius > 1){
       return `${this.radius} radiuS`
     } else {
@@ -107,6 +107,12 @@ class Cylinder {
     }
   }
 }
-// Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
 //
 // Write the code that creates three unique cylinder objects
+
+const volOne =  new Cylinder( 3, 4)
+console.log(volOne.cylinderVolume())
+const volTwo =  new Cylinder( 6, 8)
+console.log(volTwo.cylinderVolume())
+const volThree =  new Cylinder( 2, 9)
+console.log(volThree.cylinderVolume())
