@@ -37,43 +37,76 @@
 // console.log(regCoffee.coffeeProfile())
 // Output: A regular coffee with 1 cream, 2 sugars
 // Latte Maker
-// Write a Latte class that takes a flavor, a milk type and a number of shots.
-class Lattee {
-  constructor(flavor, milk, shots){
-    this.flavor = flavor.toLowerCase()
-    this.milk = milk
-    this.shots = shots
+// // Write a Latte class that takes a flavor, a milk type and a number of shots.
+// class Lattee {
+//   constructor(flavor, milk, shots){
+//     this.flavor = flavor.toLowerCase()
+//     this.milk = milk
+//     this.shots = shots
+//   }
+//
+//   latteeProfile(){
+//     return `A ${this.flavor} lattee with ${this.milks()}, ${this.shot()}`
+//   }
+//
+//   milks(){
+//     if(this.milk > 1){
+//       return `${this.milk} milks`
+//     } else {
+//       return `${this.milk} milk`
+//     }
+//   }
+//
+//   shot(){
+//     if(this.shots > 1){
+//       return `${this.shots} shots`
+//     } else {
+//       return `${this.shots} shot`
+//     }
+//   }
+// }
+// Write a method for your Latte class that outputs the latte's profile.
+//latteeProfile(){
+  // return `A ${this.flavor()} lattee with ${this.milk()}, ${this.shots()}`
+// }
+// Write the code that makes a regular, single shot latte. Then, log the latte's profile.
+// const regLattee =  new Lattee("regular", "no", "single")
+// console.log(regLattee.latteeProfile())
+// //OUTPUT: A regular lattee with no milk, single shot
+// // Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
+//
+// const hazLattee = new Lattee("hazelnut", "almond", "double")
+// console.log(hazLattee.latteeProfile())
+//OUTPUT: A hazelnut lattee with almond milk, double shot
+// Volume of a Cylinder
+
+class Cylinder {
+  constructor(radius, height){
+    this.π = 3.1415
+    this.radius = (radius ** 2)
+    this.height = height
   }
 
-  latteeProfile(){
-    return `A ${this.flavor()} lattee with ${this.milk()}, ${this.shots()}`
+  cylinderVolume(){
+    return `A ${this.π} lattee with ${this.radiu()}, ${this.heights()}`
   }
 
-  milk(){
-    if(this.milk > 1){
-      return `${this.milk} milks`
+  radiu(){
+    if(this.radius > 1){
+      return `${this.radius} radiuS`
     } else {
-      return `${this.milk} milk`
+      return `${this.radius} radius`
     }
   }
 
-  shots(){
-    if(this.shots > 1){
-      return `${this.shots} shots`
+  heights(){
+    if(this.height > 1){
+      return `${this.height} heights`
     } else {
-      return `${this.shots} shot`
+      return `${this.height} height`
     }
   }
 }
-// Write a method for your Latte class that outputs the latte's profile.
-//latteeProfile(){
-//   return `A ${this.flavor()} lattee with ${this.milk()}, ${this.shots()}`
-// }
-// Write the code that makes a regular, single shot latte. Then, log the latte's profile.
-//
-// Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
-//
-// Volume of a Cylinder
 // Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
 //
 // Write the code that creates three unique cylinder objects
