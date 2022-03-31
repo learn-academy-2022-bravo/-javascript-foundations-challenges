@@ -102,23 +102,28 @@ const author = {
   genre: "science fiction"
 }
 // Write the code that destructures the author object so that the following code snippet will run successfully:
-//console.log(`${name} is a ${genre} author`)
+let name = author.name
+let genre = author.genre
+console.log(`${name} is a ${genre} author`)
 // // Output: "H. G. Wells is a science fiction author"
 // Consider this variable:
 //
-// const pokeOne = {
-//   species: "Charmandar",
-//   pokemon_type: "Fire"
-// }
+const pokeOne = {
+  species: "Charmandar",
+  pokemon_type: "Fire"
+}
 //
-// const pokeTwo = {
-//   species: "Magikarp",
-//   pokemon_type: "Water"
-// }
+const pokeTwo = {
+  species: "Magikarp",
+  pokemon_type: "Water"
+}
 // Create a function called describePokemon that take an object like the ones above and uses destructuring to return a description of the Pokemon so that the following code snippet will run successfully:
-// console.log(describePokemon(pokeOne))
+const describePokemon = (obj) => {
+  return `${obj.species} is a ${obj.pokemon_type} pokemon`
+}
+ console.log(describePokemon(pokeOne))
 // // Output: "Charmandar is a Fire pokemon"
-// console.log(describePokemon(pokeTwo))
+ console.log(describePokemon(pokeTwo))
 // // Output: "Magikarp is a Water pokemon"
 // Consider this variable:
 //
