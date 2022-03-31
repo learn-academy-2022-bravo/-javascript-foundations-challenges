@@ -67,15 +67,15 @@ class Cylinder {
     
     }
      volume()  {
-    return (this.height * (this.radius * this.radius) * Math.PI) 
+    return (this.height * (this.radius * this.radius) * Math.PI).toFixed(4)
     }
 }
 // Write the code that creates three unique cylinder objects
 const num1 = new Cylinder(8,7)
-console.log(num1.volume().toFixed(4))
+console.log(num1.volume())
 
 const num2 = new Cylinder(5,4)
-console.log(num2.volume().toFixed(4))
+console.log(num2.volume())
 
 const num3 = new Cylinder(3,9)
-console.log(num3.volume().toFixed(4))
+console.log(num3.volume())
