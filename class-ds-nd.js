@@ -92,10 +92,18 @@ class Cylinder {
     return volume.toFixed(4)
   }
 }
-const volumeFinder1 = new Cylinder (2.1,3)
-console.log(volumeFinder1.getVolume())
-
-
+// const volumeFinder1 = new Cylinder (2.1,3)
+// console.log(volumeFinder1.getVolume())
 
 
 // Write the code that creates three unique cylinder objects
+
+const volumeFinder1 = new Cylinder (10,20)
+console.log(volumeFinder1.getVolume())
+//6283.0000
+const volumeFinder2 = new Cylinder (3.1415,646.6)
+console.log(volumeFinder2.getVolume())
+//20046.8847
+const volumeFinder3 = new Cylinder (35.45,1027.64)
+console.log(volumeFinder3.getVolume())
+//4057051.7139
