@@ -127,12 +127,18 @@ const describePokemon = (obj) => {
 // // Output: "Magikarp is a Water pokemon"
 // Consider this variable:
 //
-// const triangleDimensions = {
-//   base: 2,
-//   height: 5
-// }
+const triangleDimensions = {
+  base: 2,
+  height: 5
+}
 // Modify the triangleDimensions object to have a method that returns the area of the triangle.
+triangleDimensions[`area`] = function () {
+  return triangleDimensions.base * triangleDimensions.height
+}
+console.log(triangleDimensions.area());
 // Write the code that will update the base to be the value of 6.
+triangleDimensions.base = 6
+console.log(triangleDimensions);
 // Consider this variable:
 //
 // const learn = {
