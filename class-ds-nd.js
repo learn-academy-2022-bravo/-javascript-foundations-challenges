@@ -34,7 +34,10 @@ class Coffee {
 
 //
 // Write the code that makes a coffee with 1 cream and 2 sugars. Then write the code that outputs the coffee's profile.
-//
+//// const order2 = new Coffee ("decaf", "1", "2")
+// console.log(order2)
+// console.log(order2.coffeeProfile())
+
 // Latte Maker
 // Write a Latte class that takes a flavor, a milk type and a number of shots.
 
@@ -78,4 +81,21 @@ class Coffee {
 // Volume of a Cylinder
 // Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
 //
+class Cylinder {
+  constructor (radius, height) {
+    this.pie = 3.1415
+    this.radius = radius
+    this.height = height
+  }
+  getVolume(){
+    let volume = this.pie * this.radius **2 *this.height
+    return volume.toFixed(4)
+  }
+}
+const volumeFinder1 = new Cylinder (2.1,3)
+console.log(volumeFinder1.getVolume())
+
+
+
+
 // Write the code that creates three unique cylinder objects
