@@ -221,13 +221,16 @@ let learn = {
 }
 // Write the code that logs the name of your cohort.
 
-// console.log(learn.cohorts["2022"][1])
 
-// let { bev1, bev2, bev3 } = breakfast.beverage
-// console.log(bev1)
-// console.log(bev2)
-// console.log(bev3)
 // Write the code that uses destructuring to log the name of your cohort.
-let { cohort1, cohort2 } = learn.cohorts
-console.log(cohort2[1])
+// let { cohort1, cohort2 } = learn.cohorts
+// console.log(cohort2[1])
 // Create a function that takes an object like the one above and returns an array with a string of every cohort name and year.
+const propertyNames = Object.values(learn);
+
+console.log(propertyNames);
+
+// const animalFacts = animals.map (animal => {
+//   return `The ${animal.type} named ${animal.name} and is ${animal.age} years old`
+// })
+// console.log(animalFacts)
