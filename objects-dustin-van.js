@@ -119,15 +119,15 @@ const animals = [
     { name: "Hank", type: "cat", age: 11 }
 ]
 
-const animalAge = (array) => {
-    let newArray = array.filter(value =>
-        value.age > 10
-        )
-        return newArray
-}
-// const theAnimalAge = animals.filter(value => value.age > 10)
+// const animalAge = (array) => {
+//     newArray = array.filter(value => value.age > 10)
+//     return newArray.map(value => value.name)
+// }
 
-console.log(animalAge(animals))
+// console.log(animalAge(animals))
+
+
+
 
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
