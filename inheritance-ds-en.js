@@ -48,6 +48,11 @@
 //
 // Story: As a programmer, I can slow my Volkswagen down by 5 per braking.
 
+//
+// Story: As a programmer, I can call upon a carInfo method that will tell me all the information about a car.
+//
+// The method can be created in the parent class and accessed by all child classes
+
 class Car {
   constructor(model, year) {
     this.model = model
@@ -65,6 +70,9 @@ class Car {
   }
   accelerate(){
     this.speedStatus = number
+  }
+  carInfo() {
+    `${this.model} ${this.year} ${this.numberOfWheels} ${this.lightsStatus} ${this.signalStatus} ${this.speedStatus}`
   }
 }
 
@@ -85,8 +93,10 @@ class Tesla extends Car {
 }
 
 let myTesla = new Tesla("Model X", "2018")
-console.log(myTesla)
-myTesla.speedUp()
+// console.log(myTesla)
+// myTesla.speedUp()
+// console.log(myTesla)
+myTesla.carInfo()
 console.log(myTesla)
 
 class Toyota extends Car {
@@ -117,12 +127,6 @@ class Volkswagen extends Car {
 
 let myVolkswagen = new Volkswagen("Bug", "2008")
 myVolkswagen.lightSwitch()
-console.log(myVolkswagen);
+// console.log(myVolkswagen);
 
 
-
-
-//
-// Story: As a programmer, I can call upon a carInfo method that will tell me all the information about a car.
-//
-// The method can be created in the parent class and accessed by all child classes
