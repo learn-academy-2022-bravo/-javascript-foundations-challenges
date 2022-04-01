@@ -1,12 +1,12 @@
 // Story: As a programmer, I can make a car.
 // Write a variable called myCar which is an instance of the class Car
-class Car {
-  constructor (myCar, myYear){
-    this.model = myCar
-    this.year = myYear
-    this.wheels = 4
-  }
-}
+// class Car {
+//   constructor (myCar, myYear){
+//     this.model = myCar
+//     this.year = myYear
+//     this.wheels = 4
+//   }
+// }
 
 // Story: As a programmer, I can give my car a model on initialization.
 // The model for the car class can be "generic car"
@@ -65,11 +65,11 @@ class Car {
 // class Volkswagen inherits from class Car
 // create an object called myVolkswagen which is a instance of class Volkswagen
 
-class Volkswagen extends Car{
-  constructor(myVolkswagen, myYear){
-    super(myVolkswagen, myYear)
-  }
-}
+// class Volkswagen extends Car{
+//   constructor(myVolkswagen, myYear){
+//     super(myVolkswagen, myYear)
+//   }
+// }
 
 
 // Story: As a programmer, I can give my Volkswagen a model on initialization.
@@ -82,5 +82,53 @@ class Volkswagen extends Car{
 // Story: As a programmer, I can give my Volkswagen a year on initialization.
 // The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
 
-let newVolkswagen = new Volkswagen("Beetle", "2022")
-console.log(newVolkswagen)
+// let newVolkswagen = new Volkswagen("Beetle", "2022")
+// console.log(newVolkswagen)
+
+// Story: As a programmer, I can give all my cars a lights property. Lights start in the off position.
+class Car {
+  constructor (myCar, myYear){
+    this.model = myCar
+    this.year = myYear
+    this.wheels = 4
+    this.lights = false
+    this.signals = false
+    this.speed = 0
+  }
+  light(){
+    this.lights = true
+  }
+}
+// Story: As a programmer, I can turn the lights in all my cars on and off.
+
+// Story: As a programmer, I can give all my cars a signal property. Turn signal starts in the off position.
+//
+// Story: As a programmer, I can determine the speed of a car. Speed starts at 0 mph.
+
+// Story: As a programmer, I can speed my Tesla up by 10 per acceleration.
+class Tesla extends Car{
+  constructor (myTesla, myYear){
+    super(myTesla, myYear)
+  }
+  acceleration(){
+    this.speed = 10
+  }
+}
+ let newTesla = new Tesla("Type C", "2022")
+ console.log(newTesla)
+newTesla.acceleration()
+  console.log(newTesla.acceleration(this.speed))
+
+// Story: As a programmer, I can slow my Tesla down by 7 per braking.
+//
+// Story: As a programmer, I can speed my Toyota up by 5 per acceleration.
+//
+// Story: As a programmer, I can slow my Toyota down by 2 per braking.
+//
+// Story: As a programmer, I can speed my Volkswagen up by 7 per acceleration.
+//
+// Story: As a programmer, I can slow my Volkswagen down by 5 per braking.
+//
+// Story: As a programmer, I can call upon a carInfo method that will tell me all the information about a car.
+//
+// The method can be created in the parent class and accessed by all child classes
