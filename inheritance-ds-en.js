@@ -72,7 +72,7 @@ class Car {
     this.speedStatus = number
   }
   carInfo() {
-    `${this.model} ${this.year} ${this.numberOfWheels} ${this.lightsStatus} ${this.signalStatus} ${this.speedStatus}`
+    return `The type of car is a ${this.model} ${this.year} with ${this.numberOfWheels} wheels`
   }
 }
 
@@ -93,11 +93,8 @@ class Tesla extends Car {
 }
 
 let myTesla = new Tesla("Model X", "2018")
-// console.log(myTesla)
-// myTesla.speedUp()
-// console.log(myTesla)
-myTesla.carInfo()
-console.log(myTesla)
+
+console.log(myTesla.carInfo())
 
 class Toyota extends Car {
   constructor(model, year) {
@@ -113,6 +110,8 @@ class Toyota extends Car {
 
 let myToyota = new Toyota("Camry", "1999")
 
+console.log(myToyota.carInfo())
+
 class Volkswagen extends Car {
   constructor(model, year, lightsStatus, signalStatus, speedStatus) {
     super(model, year, lightsStatus, signalStatus, speedStatus)
@@ -127,6 +126,6 @@ class Volkswagen extends Car {
 
 let myVolkswagen = new Volkswagen("Bug", "2008")
 myVolkswagen.lightSwitch()
+
+console.log(myVolkswagen.carInfo())
 // console.log(myVolkswagen);
-
-
