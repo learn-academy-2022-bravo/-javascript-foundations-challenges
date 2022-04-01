@@ -166,6 +166,7 @@ getData: function() {
 //Output: Waffles is a good dog and is 7
 
 
+
 // Consider this variable:
 //
 // const author = {
