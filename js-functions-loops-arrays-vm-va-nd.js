@@ -1,5 +1,5 @@
 // Write a function that takes in an array of numbers and returns an array with all numbers multiplied by 3.
-var testArr1 = [3, 9, 15, 4, 10]
+// var testArr1 = [3, 9, 15, 4, 10]
 // // Expected Output--> [9, 27, 45, 12, 30]
 
 //Create a function called mult3
@@ -20,7 +20,7 @@ var testArr1 = [3, 9, 15, 4, 10]
 // Actual Output: [ 9, 27, 45, 12, 30 ]
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
-var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 // //Expected Output --> [-7, 3, 5, 13]
 
 //Create a function called oddNum
@@ -48,8 +48,12 @@ var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 // // // --> "nicework"
 // //create a function taking an array and only outputting letters called bravo
 // // create numStorage3
-// //create a loop to identify only letters
-// //utilize if statement with typeOf 
+// // //create a loop to identify only letters
+// <<<<<<< js-objects-nd-ja
+// // //utilize if statement with typeOf
+// =======
+// // //utilize if statement with typeOf 
+// >>>>>>> main
 // //push to variable numStorage3
 // //retun numStorage3
 // //create a console.log result
@@ -65,26 +69,30 @@ var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 // console.log(bravo(comboArr))
 
 // Create a function that takes in an array of numbers and returns the sum.
-var addThese1 = [1, 2, 3, 4]
-// // --> 10
-//
-//create a function that takes in an array of numbers and returns the sum called numSum
-//create a variable numSumTotal 
+// var addThese1 = [1, 2, 3, 4]
+// // // --> 10
+// //
+// //create a function that takes in an array of numbers and returns the sum called numSum
+// <<<<<<< js-objects-nd-ja
+// //create a variable numSumTotal
+// =======
+// //create a variable numSumTotal 
+// >>>>>>> main
 //create a loop to address each number and adds it to numSumTotal
 //return numSumTotal
 //console.log numSumTotal
 
-const numSum = (array4) => {
-    let numSumTotal = [0]
-    for(let i = 0; i < array4.length; i++){
-     let numSumTemp = (numSumTotal[0] + array4[i])
-       numSumTotal.unshift(numSumTemp)
-       numSumTotal.pop()
-    }
-    return numSumTotal
-}
-console.log(numSum(addThese1))
-var addThese2 = []
+// const numSum = (array4) => {
+//     let numSumTotal = [0]
+//     for(let i = 0; i < array4.length; i++){
+//      let numSumTemp = (numSumTotal[0] + array4[i])
+//        numSumTotal.unshift(numSumTemp)
+//        numSumTotal.pop()
+//     }
+//     return numSumTotal
+// }
+// console.log(numSum(addThese1))
+// var addThese2 = []
 // // --> 0
 // Create a function that takes in an array of numbers and returns the index of the largest number.
 // var indexHighestNumber = [1, 4, 2, 3]

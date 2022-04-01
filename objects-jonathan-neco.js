@@ -109,27 +109,63 @@ const animals = [
   { name: "Waffles", type: "dog", age: 7 },
   { name: "Fluffy", type: "cat", age: 14 },
   { name: "Spelunky", type: "dog", age: 4 },
-  { name: "Hank", type: "cat", age: 11 }
+  { name: "Hank", type: "cat", age: 11 },
+
+
+
+
 ]
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
-const cats = animals.filter(value => value.type === "cat")
-return cats
-console.log(animals)
+// const onlyCats = animals.filter(value => value.type === "cat")
+// return onlyCatscats
+// console.log(onlyCats)
 
-
-// const onlyCats = (array) => {
-//   return array.map(obj => {
-//     return obj.type
-//   })
-// }
-// console.log(onlyCats(animals)
+// Output:
+// { name: 'Fluffy', type: 'cat', age: 14 },
+//   { name: 'Hank', type: 'cat', age: 11 }
 
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
 
+// const petNames = (array) => {
+//   return array.map(obj => {
+//     return obj.name
+//   })
+// }
+// console.log(petNames(animals))
 
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
 
+// const onlyAge = animals.filter(value => value.age > 10 )
+// // return onlyCatscats
+// console.log(onlyAge)
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
+
+// const animals = [
+//   { name: "Waffles", type: "dog", age: 7 },
+//   { name: "Fluffy", type: "cat", age: 14 },
+//   { name: "Spelunky", type: "dog", age: 4 },
+//   { name: "Hank", type: "cat", age: 11 }
+
+// let petBio = {
+//   petName: "Waffles" ,
+//   petType: "is a good dog",
+//   petAge:  "and is 7."
+// }
+
+const petBio = {
+  name: "Waffles",
+  type: "dog",
+  age:  "7.",
+getData: function() {
+      return `${this.name} is a good ${this.type} and is ${this.age}`
+  }
+}
+  console.log(petBio.getData())
+
+//Output: Waffles is a good dog and is 7
+
+
 
 // Consider this variable:
 //
