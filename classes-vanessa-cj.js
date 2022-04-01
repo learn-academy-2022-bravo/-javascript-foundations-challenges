@@ -116,14 +116,10 @@ class CylinderMaker {
 // Write the code that creates three unique cylinder objects
 
 const threeCylinders = () => {
-    newCylinder1 = new CylinderMaker (10, 4),
-    console.log(newCylinder1)
-
-    newCylinder2 = new CylinderMaker (20, 4),
-    console.log(newCylinder2)
-
-    newCylinder3 = new CylinderMaker (30, 4)
-    console.log(newCylinder3) 
+    newCylinder1 = new CylinderMaker (10, 9)
+    newCylinder2 = new CylinderMaker (20, 5)
+    newCylinder3 = new CylinderMaker (30, 7)
+    return [newCylinder1, newCylinder2, newCylinder3]
 
     
 }
