@@ -36,13 +36,23 @@
 //
 // Story: As a programmer, I can determine the speed of a car. Speed starts at 0 mph.
 //
-
+// Story: As a programmer, I can speed my Tesla up by 10 per acceleration.
+//
+// Story: As a programmer, I can slow my Tesla down by 7 per braking.
+//
+// Story: As a programmer, I can speed my Toyota up by 5 per acceleration.
+//
+// Story: As a programmer, I can slow my Toyota down by 2 per braking.
+//
+// Story: As a programmer, I can speed my Volkswagen up by 7 per acceleration.
+//
+// Story: As a programmer, I can slow my Volkswagen down by 5 per braking.
 
 class Car {
-  constructor (model, year, numberOfWheels, lightsStatus, signalStatus, speedStatus) {
+  constructor(model, year) {
     this.model = model
     this.year = year
-    this.numberOfWheels = numberOfWheels
+    this.numberOfWheels = 4
     this.lightsStatus = false
     this.signalStatus = false
     this.speedStatus = 0
@@ -63,46 +73,55 @@ let myCar = new Car
 
 
 class Tesla extends Car {
-  constructor(model, year, numberOfWheels){
-    super(model, year, numberOfWheels)
+  constructor(model, year) {
+    super(model, year)
+  }
+  speedUp() {
+    this.speedStatus = 10
+  }
+  speedDown() {
+    this.speedStatus = 7
   }
 }
 
-let myTesla = new Tesla
+let myTesla = new Tesla("Model X", "2018")
+console.log(myTesla)
+myTesla.speedUp()
+console.log(myTesla)
 
 class Toyota extends Car {
-  constructor(model, year, numberOfWheels){
-    super(model, year, numberOfWheels)
-
+  constructor(model, year) {
+    super(model, year)
+  }
+  speedUp() {
+    this.speedStatus = 5
+  }
+  speedDown() {
+    this.speedStatus = 2
   }
 }
 
-let myToyota = new Toyota
+let myToyota = new Toyota("Camry", "1999")
 
 class Volkswagen extends Car {
-  constructor(model, year, numberOfWheels){
-    super(model, year, numberOfWheels)
-
+  constructor(model, year, lightsStatus, signalStatus, speedStatus) {
+    super(model, year, lightsStatus, signalStatus, speedStatus)
+  }
+  speedUp() {
+    this.speedStatus = 7
+  }
+  speedDown() {
+    this.speedStatus = 5
   }
 }
 
-let myVolkswagen = new Volkswagen
+let myVolkswagen = new Volkswagen("Bug", "2008")
 myVolkswagen.lightSwitch()
 console.log(myVolkswagen);
 
 
 
-// Story: As a programmer, I can speed my Tesla up by 10 per acceleration.
-//
-// Story: As a programmer, I can slow my Tesla down by 7 per braking.
-//
-// Story: As a programmer, I can speed my Toyota up by 5 per acceleration.
-//
-// Story: As a programmer, I can slow my Toyota down by 2 per braking.
-//
-// Story: As a programmer, I can speed my Volkswagen up by 7 per acceleration.
-//
-// Story: As a programmer, I can slow my Volkswagen down by 5 per braking.
+
 //
 // Story: As a programmer, I can call upon a carInfo method that will tell me all the information about a car.
 //
