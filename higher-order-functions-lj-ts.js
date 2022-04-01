@@ -35,6 +35,20 @@
 
 
 
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// // --> "nicework"
+
+const stringOnly = comboArr.filter(value => {
+    return typeof value == "string"
+    return value.join("")
+}) 
+
+console.log("original array: ", comboArr)
+console.log("filtered array: ", stringOnly)
+
+
+
+
 
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
