@@ -1,75 +1,66 @@
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
-// 1: Write the test first!
-// describe("drinkCoffee" , () => {
-//   it ("returns a conditional string that says ;keep working'", () => {
-//     expect(drinkCoffee("tired")).toEqual("drink coffee")
-//     expect(drinkCoffee("not tired")).toEqual("keep working")
-//   })
+// describe("mood", () => {
+//     it("returns a string that says 'drink coffee' or 'keep working'", () => {
+//         expect(mood("tired")).toEqual("drink coffee")
+//         expect(mood("not tired")).toEqual("keep working")
 // })
-
-// 2: Run your testing suit to see a failing test
-
-// 3: Write the code
-      // Pseduo code
-      // create function that calls to drink coffee
-      // identify parameters which will be a string
-      // create conditionals if and else statements
-
-// 4: Run your testing suit to see your test pass
-// PASS  ./jest.test.js
-//  drinkCoffee
-//    ✓ returns a conditional string that says ;keep working' (1 ms)
-//
-// Test Suites: 1 passed, 1 total
-// Tests:       1 passed, 1 total
-// Snapshots:   0 total
-// Time:        0.15 s, estimated 1 s
-// 5: Refactor if necessary
-// NA
-// This is known as Red-Green Refactor
-
-
-// Write the function that will make the test pass.
-
-// const drinkCoffee = (string1) => {
-// if (string1 === "tired") {
-// return "drink coffee"
-// } else { return "keep working"}
+// })
+// // Write the function that will make the test pass.
+// /// Create a function called mood
+// /// Input: dataType boolean value
+// /// Output: string ("drink coffee" or "keep working")
+// /// Methods to be used: conditionals 
+// const mood = (string) => {
+//     if(string === "tired") {
+//         return "drink coffee"
+//     }else if(string === "not tired") {
+//         return "keep working"
+//     }
 // }
 
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
-// describe("calm" , () => {
-//   it ("returns a conditional string that says 'relax'", () => {
-//     expect(calm("stressed")).toEqual("relax")
-//     expect(calm("not stressed")).toEqual("keep going")
-//   })
-// })
-
-
-// Write the function that will make the test pass.
-// const calm = (string1) => {
-// if (string1 === "stressed") {
-// return "relax"
-// } else { return "keep going"}
+// describe("treatYourself", () => {
+//     it("returns a string that says 'relax' or 'keep going'", () => {
+//              expect(treatYourself("stressed")).toEqual("relax")
+//             expect(treatYourself("not stressed")).toEqual("keep going")
+//      })
+//      })
+// // Write the function that will make the test pass.
+// // /// Create a function called treatYourself
+// // /// Input: dataType boolean value
+// // /// Output: string ("relax or "keep going")
+// // /// Methods to be used: conditionals 
+// const treatYourself = (string) => {
+//     if(string === "stressed") {
+//         return "relax"
+//     }else if(string === "not stressed") {
+//         return "keep going"
+//     }
 // }
-//
-// PASS  ./jest.test.js
-//  calm
-//    ✓ returns a conditional string that says 'relax' (1 ms)
-//
-// Test Suites: 1 passed, 1 total
-// Tests:       1 passed, 1 total
-// Snapshots:   0 total
-// Time:        0.151 s
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
+describe("price", () => {
+        it("returns a string that says 'in budget '", () => {
+            expect(price(70)).toEqual("in budget")
+    })
+    })
 
+// Write the function that will make the test pass.
+// Create a function called price
+// Input: dataType number
+// Output: dataType string
+// Methods to be used: conditionals
 
-
-
-
-
+const price = (number) => {
+    if(number <= 300) {
+    return "in budget"}
+}
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
+describe("smallNum", () => {
+    it("returns the smaller number", () => {
+        expect(smallNum(70,200))).toEqual("")
+})
+})
 // Write the function that will make the test pass.
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd.
 // Write the function that will make the test pass.

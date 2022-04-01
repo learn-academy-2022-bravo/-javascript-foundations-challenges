@@ -1,76 +1,86 @@
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
-// 1: Write the test first!
-// describe("drinkCoffee" , () => {
-//   it ("returns a conditional string that says ;keep working'", () => {
-//     expect(drinkCoffee("tired")).toEqual("drink coffee")
-//     expect(drinkCoffee("not tired")).toEqual("keep working")
-//   })
-// })
 
-// 2: Run your testing suit to see a failing test
 
-// 3: Write the code
-      // Pseduo code
-      // create function that calls to drink coffee
-      // identify parameters which will be a string
-      // create conditionals if and else statements
 
-// 4: Run your testing suit to see your test pass
-// PASS  ./jest.test.js
-//  drinkCoffee
-//    ✓ returns a conditional string that says ;keep working' (1 ms)
-//
-// Test Suites: 1 passed, 1 total
-// Tests:       1 passed, 1 total
-// Snapshots:   0 total
-// Time:        0.15 s, estimated 1 s
-// 5: Refactor if necessary
-// NA
-// This is known as Red-Green Refactor
+describe("isTired",() => {
+    it("logs 'drink coffee' based on yes or no input",() => {
+        expect(isTired("yes")).toEqual("drink coffee")
+        expect(isTired("no")).toEqual("keep working")    
+    })
+})
 
 
 // Write the function that will make the test pass.
 
-// const drinkCoffee = (string1) => {
-// if (string1 === "tired") {
-// return "drink coffee"
-// } else { return "keep working"}
-// }
+const isTired = (string) => {
+    if (string === "yes"){
+        return "drink coffee" 
+    } else if(string === "no"){
+        return "keep working"
+    }
+}
 
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
-// describe("calm" , () => {
-//   it ("returns a conditional string that says 'relax'", () => {
-//     expect(calm("stressed")).toEqual("relax")
-//     expect(calm("not stressed")).toEqual("keep going")
-//   })
-// })
+
+describe("currentState",() => {
+    it("logs 'relax' based on yes or no input",() => {
+        expect(currentState("yes")).toEqual("relax")
+        expect(currentState("no")).toEqual("keep going")    
+    })
+})
 
 
 // Write the function that will make the test pass.
-// const calm = (string1) => {
-// if (string1 === "stressed") {
-// return "relax"
-// } else { return "keep going"}
-// }
-//
-// PASS  ./jest.test.js
-//  calm
-//    ✓ returns a conditional string that says 'relax' (1 ms)
-//
-// Test Suites: 1 passed, 1 total
-// Tests:       1 passed, 1 total
-// Snapshots:   0 total
-// Time:        0.151 s
+
+const currentState = (string) => {
+    if (string === "yes"){
+        return "relax" 
+    } else if(string === "no"){
+        return "keep going"
+    }
+}
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 
+describe("inBudget",() => {
+    it("in budget",() => {
+        expect(inBudget(299)).toEqual("in budget")   
+        expect(inBudget(301)).toEqual("over budget")     
+    })  
+})
 
 
+// Write the function that will make the test pass.
+
+const inBudget = (number) => {
+    if (number <= 300){
+        return "in budget" 
+    } else{
+        return "over budget"
+    }
+}
 
 
 
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
+
+describe("smallestNumber",() => {
+    it("smallestNumber",() => {
+        expect(smallestNumber(num1, num2)).toEqual(num2)        
+    })  
+})
+
+let num1 = 20   
+let num2 = 10
+const smallestNumber = (num1, num2) => {
+    if (num1 > num2){
+        return num2 
+    } else{ 
+        return num1
+    }
+}
 // Write the function that will make the test pass.
+
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd.
 // Write the function that will make the test pass.
 // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
