@@ -54,9 +54,9 @@
 
 // Latte Maker
  // Write a Latte class that takes a flavor, a milk type and a number of shots.
-class Coffee {
+class Latte {
   constructor(flavor, milktype, shots){
-    this.flavor = flavor.toLowerCase('caramel')
+    this.flavor = flavor.toLowerCase()
     this.milktype = milktype
     this.shots = shots
   }
@@ -69,9 +69,8 @@ class Coffee {
     if(this.milktype > 1){
       return `${this.milktype} milktype`
     } else {
-      return `${this.milktype} milktype`
+      return ` ${this.milktype} milktype`
     }
-  }
 
   shots(){
     if(this.shots > 1){
@@ -79,11 +78,27 @@ class Coffee {
     } else {
       return `${this.shots} shots`
     }
-  }
+
 }
 
-var latte = new Coffee ('latte')
-console.log(latte.flavor())
+const latteMix = new Coffee ()
+console.log(lattemix)
+consol.log(lattemix.coffeeflavor())
+
+
+//
+// class Coffee {
+//   constructor(type, cream, sugar){
+//     this.type = type.toLowerCase()
+//     this.cream = 1
+//     this.sugar = 2
+//   }
+//
+//  function () => return "flavor", "milkType", "shot"
+//   var mocha = new Coffee ('mocha')
+// console.log(mocha.coffeeProfile())
+
+
 
 // Write a method for your Latte class that outputs the latte's profile.
 //
