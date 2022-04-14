@@ -42,42 +42,67 @@
 
 // // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
 
-const product = {
-    name: "chair",
-    price: 24.99
-  }
+// const product = {
+//     name: "chair",
+//     price: 24.99
+//   }
 
-const totalWithTax = (productObject) => {
-    let total = productObject.price * 1.07
-    return total.toFixed(2)
+// const totalWithTax = (productObject) => {
+//     let total = productObject.price * 1.07
+//     return total.toFixed(2)
     
-}
-console.log(totalWithTax(product))
+// }
+// console.log(totalWithTax(product))
 
 // // Consider this variable:
 
-const lunch = {
-  name: "PB and Banana",
-  type: "sandwich",
-  ingredients: ["bread", "peanut butter", "banana"]
-}
+// const lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"]
+// }
 
 
 
 // // Write the code that accesses the ingredients property.
 
-console.log(lunch.ingredients)
+// console.log(lunch.ingredients)
 
 // // Write the code that access the third ingredient of the lunch object.
 
-console.log(lunch.ingredients[2])
+// console.log(lunch.ingredients[2])
 
 // // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// const lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"]
+// }
 
-=(){
-    
-}
+// const pbjb = (lunch) => {
+//     return `The ingredients for a PB and Banana sandwich are ${lunch.ingredients[0]}, ${lunch.ingredients[1]}, and ${lunch.ingredients[2]}`
+// }
+// console.log(pbjb(lunch))
+
 // // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+const lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"],
+  pbjb: function() {
+    return `The ingredients for a PB and Banana sandwich are ${this.ingredients[0]}, ${this.ingredients[1]}, and ${this.ingredients[2]}`
+  }
+}
+console.log(lunch.pbjb())
+
+
+
+
+
+
+
+
 // // Consider this variable:
 
 // // const animals = [
